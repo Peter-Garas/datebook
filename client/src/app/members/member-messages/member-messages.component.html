@@ -1,0 +1,54 @@
+<div class="card">
+    <div #scroll class="card-body">
+        <div *ngIf="(messagesService.messageThread$ | async)?.length === 0">
+            No messages between you and {{username | titlecase}}. Send a message to say Hi!
+        </div>
+
+        <ul 
+            #scrollMe
+            style="overflow-y: scroll; height: 300px; width: 100%;"
+            [scrollTop]="scrollMe.scrollHeight"
+            *ngIf="(messagesService.messageThread$ | async)!.length > 0" class="chat">
+            <li *ngFor="let message of (messagesService.messageThread$ | async)">
+                <div>
+                    <span class="chat-img float-start">
+                       <img 
+                            class="rounded-circle ms-3 me-3" 
+                            src="{{message.senderPhotoUrl || './assets/user.png'}}" 
+                            alt="user photo" 
+                        /> 
+                    </span>
+                    <div class="chat-body">
+                        <div class="header">
+                            <small class="text-muted">
+                                <span class="fa fa-clock-o">{{message.messageSent | timeago}}</span>
+                                <span class="text-danger" *ngIf="!message.dateRead 
+                                && message.senderUsername !== username"> (Delivered)</span>
+                                <span class="text-success" *ngIf="message.dateRead
+                                && message.senderUsername !== username"> (Read {{message.dateRead | timeago}})</span>
+                            </small>
+                        </div>
+                        <p>{{message.content}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <form #messageForm="ngForm" (ngSubmit)="sendMessage()" autocomplete="off">
+            <div class="input-group">
+                <input 
+                    type="test" 
+                    name="messageContent"
+                    [(ngModel)]="messageContent"
+                    required
+                    class="form-control input-sm" 
+                    placeholder="Send a private message" 
+                />
+                <div class="input-group-append ms-2">
+                    <button [disabled]="!messageForm.valid" class="btn btn-primary" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
