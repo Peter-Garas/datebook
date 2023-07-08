@@ -14,6 +14,7 @@ export class ListsComponent implements OnInit {
   pageNumber = 1;
   pageSize = 5;
   pagination: Pagination | undefined;
+  loading = false;
 
   constructor(private memberService: MembersService) { }
 
@@ -22,10 +23,12 @@ export class ListsComponent implements OnInit {
   }
 
   loadLikes() {
+    this.loading = true;
     this.memberService.getLikes(this.predicate, this.pageNumber, this.pageSize).subscribe({
       next: response => {
         this.members = response.result;
         this.pagination = response.pagination;
+        this.loading = false;
       }
     })
   }

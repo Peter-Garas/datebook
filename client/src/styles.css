@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #FFFDFA;
-}
+    padding-top: 70px;
+  }
 
 .tab-panel {
     border: 1px solid #ddd;
@@ -9,6 +10,7 @@ body {
     border-radius: 4px;
   }
   
+
   .nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
     border-bottom: 4px solid plum;
   }

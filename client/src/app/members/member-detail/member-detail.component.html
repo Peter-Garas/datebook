@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-4">
+<div class="row" style="margin-top: 50px;">
+    <div class="col-sm-12 col-md-4">
         <div class="card">
             <img 
                 src="{{member.photoUrl || './assets/user.png'}}" 
@@ -29,13 +29,13 @@
             </div>
             <div class="card-footer">
                 <div class="btn-group d-flex">
-                    <button class="btn btn-primary">Like</button>
+                    <button (click)="addLike(member)" class="btn btn-primary">Like</button>
                     <button (click)="selectTab('Messages')" class="btn btn-success">Messages</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-8">
+    <div class="col-sm-12 col-md-8">
         <tabset class="member-tabset" #memberTabs>
             <tab heading="About {{member.knownAs}}" (selectTab)="onTabActivated($event)">
                 <h4>Description</h4>

@@ -34,4 +34,8 @@ export class NavComponent implements OnInit {
     this.router.navigateByUrl('/')
   }
 
+  
+
 }
+
+

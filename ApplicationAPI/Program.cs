@@ -18,8 +18,10 @@ if (builder.Environment.IsDevelopment())
     connString = builder.Configuration.GetConnectionString("DefaultConnection");
 else 
 {
+
         var connUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 
+        
         connUrl = connUrl.Replace("postgres://", string.Empty);
         var pgUserPass = connUrl.Split("@")[0];
         var pgHostPortDb = connUrl.Split("@")[1];
@@ -35,7 +37,7 @@ else
 }
 builder.Services.AddDbContext<DataContext>(opt =>
 {
-    opt.UseNpgsql(connString);
+   opt.UseNpgsql(connString);
 });
 
 var app = builder.Build();

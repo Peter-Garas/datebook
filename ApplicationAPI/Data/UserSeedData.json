@@ -13,7 +13,7 @@
         "Country": "Martinique",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/54.jpg",
+                "Url": "./assets/female1.png",
                 "IsMain": true
             }
         ]
@@ -32,7 +32,7 @@
         "Country": "Grenada",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/50.jpg",
+                "Url": "./assets/female2.png",
                 "IsMain": true
             }
         ]
@@ -51,7 +51,7 @@
         "Country": "Svalbard and Jan Mayen Islands",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/14.jpg",
+                "Url": "./assets/female3.png",
                 "IsMain": true
             }
         ]
@@ -70,7 +70,7 @@
         "Country": "Zimbabwe",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/11.jpg",
+                "Url": "./assets/female4.png",
                 "IsMain": true
             }
         ]
@@ -89,7 +89,7 @@
         "Country": "Antigua and Barbuda",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/84.jpg",
+                "Url": "./assets/female5.png",
                 "IsMain": true
             }
         ]
@@ -108,7 +108,7 @@
         "Country": "British Indian Ocean Territory",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/90.jpg",
+                "Url": "./assets/male1.png",
                 "IsMain": true
             }
         ]
@@ -127,7 +127,7 @@
         "Country": "Christmas Island",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/87.jpg",
+                "Url": "./assets/male2.png",
                 "IsMain": true
             }
         ]
@@ -146,7 +146,7 @@
         "Country": "Burkina Faso",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/57.jpg",
+                "Url": "./assets/male3.png",
                 "IsMain": true
             }
         ]
@@ -165,26 +165,26 @@
         "Country": "Poland",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/11.jpg",
+                "Url": "./assets/male4.png",
                 "IsMain": true
             }
         ]
     },
     {
-        "UserName": "Davis",
+        "UserName": "Peter",
         "Gender": "male",
-        "DateOfBirth": "1978-03-20",
-        "KnownAs": "Davis",
+        "DateOfBirth": "1990-12-13",
+        "KnownAs": "Peter",
         "Created": "2020-02-25",
         "LastActive": "2020-06-11",
         "Introduction": "Voluptate sunt adipisicing ea nisi ex ullamco veniam dolor. Dolor do et exercitation in. Aute enim pariatur amet commodo. Deserunt consectetur quis culpa aliqua voluptate ipsum exercitation exercitation exercitation ea aliqua sunt.\r\n",
         "LookingFor": "Do do minim est incididunt minim qui aliqua nulla pariatur culpa pariatur culpa non. Aliquip esse quis ullamco sint voluptate. Eiusmod reprehenderit nostrud elit eu. Sit est incididunt elit excepteur eu non. Non tempor labore nisi consequat excepteur magna non velit. Nostrud labore ex nostrud magna adipisicing aute exercitation ad in incididunt pariatur anim. Officia dolor proident nulla laboris quis.\r\n",
         "Interests": "Labore consectetur labore ut nulla voluptate nulla quis labore tempor dolor laborum.",
-        "City": "Lupton",
-        "Country": "Luxembourg",
+        "City": "Tampa",
+        "Country": "Florida",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/men/93.jpg",
+                "Url": "./assets/male5.png",
                 "IsMain": true
             }
         ]

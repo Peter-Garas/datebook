@@ -1,6 +1,8 @@
-<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()" autocomplete="off">
+<form style="margin-top: 50px;" [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()" autocomplete="off">
+    <div class="col-12">
     <h2 class="text-center text-primary">Sign Up</h2>
     <hr />
+    </div>
     <div class="mb-3">
         <label style="margin-right: 10px;">I am a: </label>
         <label class="from-check-label">

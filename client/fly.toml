@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for peter-garas-datebook on 2023-07-08T15:40:09-04:00
+# fly.toml app configuration file generated for peter-garas-datebook on 2023-07-04T11:43:56-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -8,11 +8,6 @@ primary_region = "mia"
 
 [build]
   image = "petergaras/datebook:latest"
-
-[env]
-  ASPNETCORE_URLS = "http://+:8080"
-  CloudinarySettings__ApiKey = "dpfq5kdop"
-  CloudinarySettings__CloudName = "897863945719687"
 
 [http_service]
   internal_port = 8080
